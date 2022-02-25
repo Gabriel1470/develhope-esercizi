@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Sing Up</h1>
+	</header>
+	<main>
+		<form action="SingUp" style="border:1px solid #ccc">
+			<div class="container-emp">
+				<h1>Iscriviti</h1>
+				<p>Perfavore inserisci i seguenti dati per iscriverti al form</p>
+				<hr>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Inserisci" id="email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Scrivi la Password" name="psw" id="psw" required>
+
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Ripeti la Password" name="psw-repeat" id="psw-repeat" required>
+
+				<label for="">
+					<input type="checkbox" checked="checked" name="ricordami" id="ricordami" style="margin-bottom:15px"> Ricordami
+				</label>
+
+
+				<div class="container-ang">
+					<h2>Dati anagrafici</h2>
+					<label for="Nome">Nome</label>
+					<input type="text">
+					<label for="cognome">Cognome</label>
+					<input type="text">
+					<label for="Data di nascita">Data di nascita</label>
+					<input type="date">
+					<label for="telefono">Numero di telefono</label>
+					<input type="tel" id="telefono" name="telefono" placeholder="342-567-3453"
+						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10"><br>
+					<small>Format: 123-456-7890</small>
+					<input type="submit" value="Verifica">
+				</div>
+				<div>
+					<h2>Abbonamenti</h2>
+					<select name="Free" id="Free"><br>
+						<option value="Free">Free</option>
+					</select>
+					<select name="Pro" id="Pro">
+						<option value="Pro">Pro</option>
+						<option value="Beginner">Beginner 14,50€</option>
+						<option value="Medium">Medium 24,50€</option>
+						<option value="Leggend">Leggend 35€</option>
+					</select>
+					<label for="accettaPiano">Passa a Pro</label>
+					<input type="checkbox">Si
+					<input type="checkbox">No
+				</div>
+				<h2>Fatturizazione</h2>
+				<div class="CartaDiCredito">
+					<label>Numero Carta di Credito</label>
+					<input class="number" type="text" ng-model="ncard" maxlength="19" />
+					<label>Titolare Carta</label>
+					<input class="inputname" type="text" placeholder="" />
+					<label>Data di scasenza</label>
+					<input class="expire" type="text" placeholder="MM / YYYY" />
+					<label>Numero di sicurezza CVV</label>
+					<input class="ccv" type="text" placeholder="CVC" maxlength="3" />
+					<label>Indirizzo di fatturizazione</label>
+					<input type="adress" placeholder="via esempio n12">
+					<div class="clearfix">
+						<h5>Termini di servizio</h5>
+						<p>By creating an account you agree to our <a href="#" style="color:rgb(212, 19, 19)">Terms & Privacy</a>.
+						</p>
+
+						<div class="clearfix">
+							<button type="button" class="tastoCancella">Cancella</button>
+							<button type="submit" class="TastoIscriviti">Iscriviti</button>
+						</div>
+					</div>
+		</form>
+	</main>
+
+</body>
+
+</html>
